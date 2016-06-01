@@ -57,11 +57,11 @@ class SkyWarsAPI extends PluginBase implements Listener {
             $this->getServer()->generateLevel($this->cfg->getNested('lobby.world'));
         }
         $this->cmd = new SkyWarsCommand($this);
-        $this->getServer()->getLogger()->info($this->getPrefix() . TextFormat::GREEN . "SkyWarsForPE has been enabled");
+        $this->getServer()->getLogger()->info($this->getPrefix() . TextFormat::GREEN . "QSGPe has been enabled");
     }
 
     public function onDisable() {
-        $this->getServer()->getLogger()->info($this->getPrefix() . TextFormat::RED . 'SkyWarsForPE has disabled');
+        $this->getServer()->getLogger()->info($this->getPrefix() . TextFormat::RED . "QSGPe has disabled");
     }
 
     public function initConfig() {
