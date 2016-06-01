@@ -5,38 +5,38 @@ api: [2.0.0]
 author: larryTheCoder
 commands:
   sw:
-    description: use /sw help for all parameters
+    description: use /qsg help for all parameters
     aliases: sk,skywars
 permission:
-  sw.command.lobby:
+  qsg.command.lobby:
     description: back to main lobby
     default: true
-  sw.acces:
+  qsg.acces:
     description: access the game intrance
     default: true
 # For VIP access NOT DONE
 #  sw.acces.full:
 #    description: ability to join full game
 #    default: true
-  sw.editlobby:
+  qsg.editlobby:
     description: prevent players from edit lobby
     default: op
-  sw.sign:
+  qsg.sign:
     description: join using signs 
     default: true
-  sw.command:
-    description: allow player to use all skywars command
+  qsg.command:
+    description: allow player to use all qsg command
     default: op
     children:
-     sw.command.help:
-        description: get SkyWars help menu
+     qsg.command.help:
+        description: get QSG help menu
         default: op
-     sw.command.setlobby:
-        description: set SkyWars main lobby
+     qsg.command.setlobby:
+        description: set QSG main lobby
         default: op
-     sw.command.create:
-        description: create a SkyWars arenas
+     qsg.command.create:
+        description: create a QSG arenas
         default: op
-     sw.command.reload:
+     qsg.command.reload:
         description: reload skywars plugin
         default: op
